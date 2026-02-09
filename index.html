@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextStep - Educação Profissional Além da Sala de Aula</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navegação -->
+    <nav class="gradient-bg text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-graduation-cap text-3xl mr-3"></i>
+                    <span class="font-bold text-xl">NextStep</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-gray-200">Início</a>
+                    <a href="#sobre" class="hover:text-gray-200">Sobre</a>
+                    <a href="#servicos" class="hover:text-gray-200">Serviços</a>
+                    <a href="#inscricao" class="hover:text-gray-200">Inscrição</a>
+                    <a href="#contato" class="hover:text-gray-200">Contato</a>
+                </div>
+                <button id="menuBtn" class="md:hidden">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Menu Mobile -->
+        <div id="mobileMenu" class="hidden md:hidden pb-4">
+            <a href="#home" class="block px-4 py-2 hover:bg-purple-700">Início</a>
+            <a href="#sobre" class="block px-4 py-2 hover:bg-purple-700">Sobre</a>
+            <a href="#servicos" class="block px-4 py-2 hover:bg-purple-700">Serviços</a>
+            <a href="#inscricao" class="block px-4 py-2 hover:bg-purple-700">Inscrição</a>
+            <a href="#contato" class="block px-4 py-2 hover:bg-purple-700">Contato</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                NextStep
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                Educação Profissional Além da Sala de Aula
+            </p>
+            <p class="text-lg mb-10 max-w-2xl mx-auto">
+                Preparamos você para o mercado de trabalho com orientação personalizada, 
+                criação de currículos, simulações de entrevistas e muito mais!
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#inscricao" class="bg-white text-purple-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition">
+                    Inscreva-se Agora
+                </a>
+                <a href="#sobre" class="border-2 border-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-purple-600 transition">
+                    Saiba Mais
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre o Projeto -->
+    <section id="sobre" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Sobre o NextStep</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg text-gray-700 mb-6">
+                        O <strong>NextStep</strong> é um projeto educacional desenvolvido no CETEP Sisal 
+                        que visa oferecer suporte completo aos estudantes na preparação para o mercado de trabalho.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Identificamos que <strong>70% dos alunos</strong> não sabem como criar um currículo 
+                        profissional ou se comportar em entrevistas de emprego. Por isso, criamos este espaço 
+                        dedicado ao desenvolvimento pessoal e profissional.
+                    </p>
+                    <div class="bg-purple-50 p-6 rounded-lg">
+                        <h3 class="font-bold text-xl mb-3 text-purple-800">Nossos Números</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> 70% dos alunos precisam de ajuda com currículos</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Atendimento semanal nos dois turnos</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Parceria com SEBRAE para cursos</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-gradient-to-br from-blue-400 to-blue-600 text-white p-6 rounded-lg text-center">
+                        <i class="fas fa-users text-4xl mb-3"></i>
+                        <h3 class="text-3xl font-bold">200+</h3>
+                        <p>Alunos Beneficiados</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-green-400 to-green-600 text-white p-6 rounded-lg text-center">
+                        <i class="fas fa-file-alt text-4xl mb-3"></i>
+                        <h3 class="text-3xl font-bold">150+</h3>
+                        <p>Currículos Criados</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-purple-400 to-purple-600 text-white p-6 rounded-lg text-center">
+                        <i class="fas fa-briefcase text-4xl mb-3"></i>
+                        <h3 class="text-3xl font-bold">80+</h3>
+                        <p>Simulações de Entrevista</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-pink-400 to-pink-600 text-white p-6 rounded-lg text-center">
+                        <i class="fas fa-certificate text-4xl mb-3"></i>
+                        <h3 class="text-3xl font-bold">50+</h3>
+                        <p>Cursos Concluídos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Oferecidos -->
+    <section id="servicos" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-4 text-gray-800">Nossos Serviços</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                Oferecemos uma gama completa de serviços para preparar você para o mercado de trabalho
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Serviço 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Criação de Currículos</h3>
+                    <p class="text-gray-600 mb-4">
+                        Aprenda a criar currículos profissionais, incluindo o formato Lattes. 
+                        Oferecemos templates personalizados e orientação individual.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>✓ Modelos profissionais</li>
+                        <li>✓ Currículo Lattes</li>
+                        <li>✓ Export em PDF</li>
+                    </ul>
+                </div>
+
+                <!-- Serviço 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <div class="text-green-500 text-4xl mb-4">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Simulações de Entrevistas</h3>
+                    <p class="text-gray-600 mb-4">
+                        Pratique entrevistas de emprego em ambiente seguro. Receba feedback 
+                        sobre postura, vestimenta e comunicação.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>✓ Feedback personalizado</li>
+                        <li>✓ Dinâmicas de grupo</li>
+                        <li>✓ Dicas de postura</li>
+                    </ul>
+                </div>
+
+                <!-- Serviço 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <div class="text-purple-500 text-4xl mb-4">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Cursos SEBRAE</h3>
+                    <p class="text-gray-600 mb-4">
+                        Acesso a cursos sobre gestão do tempo, desenvolvimento de competências 
+                        socioemocionais e empreendedorismo.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>✓ Gestão do tempo</li>
+                        <li>✓ Competências sociais</li>
+                        <li>✓ Certificação</li>
+                    </ul>
+                </div>
+
+                <!-- Serviço 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <div class="text-orange-500 text-4xl mb-4">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Agendamento Personalizado</h3>
+                    <p class="text-gray-600 mb-4">
+                        Atendimentos individuais com agendamento prévio. Sistema de triagem 
+                        para identificar suas necessidades específicas.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>✓ Atendimento individual</li>
+                        <li>✓ Horários flexíveis</li>
+                        <li>✓ Acompanhamento contínuo</li>
+                    </ul>
+                </div>
+
+                <!-- Serviço 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Preparação ENEM/Concursos</h3>
+                    <p class="text-gray-600 mb-4">
+                        Orientações sobre editais, documentação necessária, dicas de estudo 
+                        e estratégias para provas.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>✓ Leitura de editais</li>
+                        <li>✓ Documentação</li>
+                        <li>✓ Dicas de preparação</li>
+                    </ul>
+                </div>
+
+                <!-- Serviço 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <div class="text-indigo-500 text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Desenvolvimento de Soft Skills</h3>
+                    <p class="text-gray-600 mb-4">
+                        Trabalho em equipe, comunicação, liderança e outras habilidades 
+                        essenciais para o ambiente profissional.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>✓ Trabalho em equipe</li>
+                        <li>✓ Comunicação efetiva</li>
+                        <li>✓ Inteligência emocional</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Como Funciona</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl font-bold text-purple-600">1</span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Inscrição</h3>
+                    <p class="text-gray-600">Preencha o formulário de triagem online</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl font-bold text-purple-600">2</span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Triagem</h3>
+                    <p class="text-gray-600">Analisamos suas necessidades e agendamos atendimento</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl font-bold text-purple-600">3</span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Atendimento</h3>
+                    <p class="text-gray-600">Receba orientação personalizada toda quinta-feira</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl font-bold text-purple-600">4</span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Sucesso</h3>
+                    <p class="text-gray-600">Esteja preparado para conquistar sua vaga!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Inscrição -->
+    <section id="inscricao" class="py-16 bg-gray-50">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-4 text-gray-800">Inscreva-se Agora</h2>
+            <p class="text-center text-gray-600 mb-12">
+                Preencha o formulário abaixo e comece sua jornada rumo ao sucesso profissional!
+            </p>
+            <form id="inscricaoForm" class="bg-white p-8 rounded-lg shadow-lg">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-gray-700 font-bold mb-2">Nome Completo *</label>
+                        <input type="text" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-purple-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-bold mb-2">E-mail *</label>
+                        <input type="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-purple-500">
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-gray-700 font-bold mb-2">Telefone *</label>
+                        <input type="tel" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-purple-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-bold mb-2">Turno *</label>
+                        <select required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-purple-500">
+                            <option value="">Selecione...</option>
+                            <option value="manha">Manhã</option>
+                            <option value="noite">Noite</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-bold mb-2">Curso *</label>
+                    <select required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-purple-500">
+                        <option value="">Selecione seu curso...</option>
+                        <option value="agroecologia">Agroecologia</option>
+                        <option value="informatica">Informática</option>
+                        <option value="analises-clinicas">Análises Clínicas</option>
+                        <option value="nutricao">Nutrição</option>
+                        <option value="administracao">Administração</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-bold mb-2">Serviços de Interesse *</label>
+                    <div class="space-y-2">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2">
+                            <span>Criação de Currículo</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2">
+                            <span>Simulação de Entrevista</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2">
+                            <span>Cursos SEBRAE</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2">
+                            <span>Preparação ENEM/Concursos</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-bold mb-2">Conte-nos um pouco sobre suas expectativas</label>
+                    <textarea rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-purple-500" placeholder="O que você espera do NextStep?"></textarea>
+                </div>
+                <button type="submit" class="w-full gradient-bg text-white py-3 rounded-lg font-bold hover:opacity-90 transition">
+                    Enviar Inscrição
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">O Que Dizem Nossos Alunos</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold">
+                            M
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Maria Silva</h4>
+                            <p class="text-sm text-gray-600">Informática - 3º Ano</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "O NextStep me ajudou a criar meu primeiro currículo profissional. 
+                        Consegui meu estágio logo depois!"
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">
+                            J
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">João Santos</h4>
+                            <p class="text-sm text-gray-600">Agroecologia - Noturno</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "As simulações de entrevista me deram muito mais confiança. 
+                        Agora sei exatamente como me comportar!"
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">
+                            A
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Ana Costa</h4>
+                            <p class="text-sm text-gray-600">Nutrição - 3º Ano</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "Os cursos do SEBRAE foram incríveis! Aprendi a gerenciar meu tempo 
+                        e desenvolvi habilidades essenciais."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Entre em Contato</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Informações de Contato</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-purple-600 mt-1 mr-3"></i>
+                            <div>
+                                <p class="font-bold">Endereço</p>
+                                <p class="text-gray-600">CETEP Sisal - Rua Araci, SN - Cidade Nova<br>Serrinha - BA, CEP: 48700-000</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone text-purple-600 mt-1 mr-3"></i>
+                            <div>
+                                <p class="font-bold">Telefone</p>
+                                <p class="text-gray-600">(75) 99198-8339</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-purple-600 mt-1 mr-3"></i>
+                            <div>
+                                <p class="font-bold">E-mail</p>
+                                <p class="text-gray-600">mecanografia.ceteps@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-clock text-purple-600 mt-1 mr-3"></i>
+                            <div>
+                                <p class="font-bold">Horário de Atendimento</p>
+                                <p class="text-gray-600">Quintas-feiras: Manhã e Noite<br>(Mediante agendamento)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-4">Envie uma Mensagem</h3>
+                    <form>
+                        <div class="mb-4">
+                            <input type="text" placeholder="Seu Nome" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-purple-500">
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" placeholder="Seu E-mail" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-purple-500">
+                        </div>
+                        <div class="mb-4">
+                            <textarea rows="4" placeholder="Sua Mensagem" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-purple-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full gradient-bg text-white py-2 rounded-lg font-bold hover:opacity-90 transition">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-bold text-xl mb-4">NextStep</h3>
+                    <p class="text-gray-200">
+                        Educação Profissional Além da Sala de Aula
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-xl mb-4">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-gray-200">Início</a></li>
+                        <li><a href="#sobre" class="hover:text-gray-200">Sobre</a></li>
+                        <li><a href="#servicos" class="hover:text-gray-200">Serviços</a></li>
+                        <li><a href="#inscricao" class="hover:text-gray-200">Inscrição</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-xl mb-4">Siga-nos</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-gray-200"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-gray-200"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-gray-200"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-purple-400 pt-6 text-center">
+                <p>&copy; 2025 NextStep - CETEP Sisal. Todos os direitos reservados.</p>
+                <p class="text-sm mt-2">Desenvolvido por alunos de Informática do CETEP Sisal</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu Mobile Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scroll para links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    // Fechar menu mobile se estiver aberto
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Formulário de inscrição
+        document.getElementById('inscricaoForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Inscrição enviada com sucesso! Em breve entraremos em contato.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
